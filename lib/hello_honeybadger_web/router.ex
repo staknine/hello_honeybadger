@@ -1,5 +1,6 @@
 defmodule HelloHoneybadgerWeb.Router do
   use HelloHoneybadgerWeb, :router
+  use Honeybadger.Plug
 
   pipeline :browser do
     plug :accepts, ["html"]
